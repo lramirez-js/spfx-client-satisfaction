@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "client-satisfaction-survey-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/clientSatisfactionSurvey/ClientSatisfactionSurveyWebPart.js",
+          "manifest": "./src/webparts/clientSatisfactionSurvey/ClientSatisfactionSurveyWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "node_modules/jquery/dist/jquery.min.js",
+    "jqueryui": "node_modules/jqueryui/jquery-ui.min.js"
+  },
+  "localizedResources": {
+    "ClientSatisfactionSurveyWebPartStrings": "lib/webparts/clientSatisfactionSurvey/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "client-satisfaction-survey-client-side-solution",
+    "id": "86d753f1-c4e1-418a-a54b-accf5b07b0e1",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Client Satisfaction Survey description"
+      },
+      "longDescription": {
+        "default": "Client Satisfaction Survey description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "client-satisfaction-survey Feature",
+        "description": "The feature that activates elements of the client-satisfaction-survey solution.",
+        "id": "cbeb3797-ed52-48f1-9971-5087d9864da2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/client-satisfaction-survey.sppkg"
+  }
+}

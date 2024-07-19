@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.15.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "client-satisfaction-survey",
+    "libraryId": "86d753f1-c4e1-418a-a54b-accf5b07b0e1",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Client Satisfaction Survey",
+    "solutionShortDescription": "Client Satisfaction Survey description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
