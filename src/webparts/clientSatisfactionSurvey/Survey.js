@@ -29,8 +29,9 @@ function close_modal() {
   document.querySelector('.tut').classList.remove('poptut'); // Remove
   document.querySelectorAll('h1, h2').forEach(el => el.classList.add('popone')); // Intro
   document.querySelector('.character').classList.add('poptwo'); // Intro
-  document.querySelector('.rating').classList.add('popthree'); // Intro
+  // document.querySelector('.rating').classList.add('popthree'); // Intro
   document.querySelectorAll('.next, .prev').forEach(el => el.classList.add('popfour')); // Intro
+  setTimeout(() => document.querySelector('.first-rating').classList.remove('d-none'), 1000)
 }
 
 document.querySelector('.tut p').addEventListener('click', function() {
@@ -50,8 +51,8 @@ let window_width = window.innerWidth; // Init window width
 let current_x = 0; // Current x value of slides
 let current_position = 0; // Current position
 
-document.querySelector('.feedbackform').style.width = window_width * slide_amount + 'px'; // Set up the slides
-document.querySelectorAll('.feedbackform_slide').forEach(el => el.style.width = window_width + 'px'); // Set up the slides
+// document.querySelector('.feedbackform').style.width = window_width * slide_amount + 'px'; // Set up the slides
+// document.querySelectorAll('.feedbackform_slide').forEach(el => el.style.width = window_width + 'px'); // Set up the slides
 
 document.querySelector('.next').addEventListener('click', function() {
   update_answers();
@@ -59,9 +60,12 @@ document.querySelector('.next').addEventListener('click', function() {
   if (current_position < slide_amount - 1) {
     current_position++;
     current_x = current_position * window_width;
+    
     document.querySelector('.feedbackform_slide').style.right = current_x + 'px';
     document.querySelector('.active_slide').classList.remove('active_slide');
     document.querySelector('.feedbackform_slide').nextElementSibling.classList.add('active_slide');
+    document.querySelector('.feedbackform_slide').nextElementSibling.classList.remove('d-none');
+    document.querySelector('.feedbackform_slide').classList.add('d-none')
     setTimeout(function() {
       document.querySelector('.active_slide .popone').classList.remove('popone'); // Reset animations
       document.querySelector('.active_slide .poptwo').classList.remove('poptwo'); // Reset animations
@@ -103,8 +107,8 @@ document.querySelector('.prev').addEventListener('click', function() {
 
 window.addEventListener('resize', function() { // Responsivity
   window_width = window.innerWidth; // Window width
-  document.querySelector('.feedbackform').style.width = window_width * slide_amount + 'px'; // Re jig slide sizes
-  document.querySelectorAll('.feedbackform_slide').forEach(el => el.style.width = window_width + 'px'); // Re jig slide sizes
+  // document.querySelector('.feedbackform').style.width = window_width * slide_amount + 'px'; // Re jig slide sizes
+  // document.querySelectorAll('.feedbackform_slide').forEach(el => el.style.width = window_width + 'px'); // Re jig slide sizes
   current_position = 0; // Reset
   current_x = current_position * window_width; // Reset
   document.querySelector('.feedbackform_slide').style.right = current_x + 'px'; // Reset
@@ -116,7 +120,7 @@ window.addEventListener('resize', function() { // Responsivity
 
 // Questions
 
-let questions = ['How satisfied are you with our services?', 'How satisfied are you with your pet?', 'How were our staff?', 'How was the cleanliness of our store?']
+let questions = ['How satisfied are you with our services?', 'Rate the competency and skills of the staff provided', 'How were our staff?', 'How was the cleanliness of our store?']
 let q = 0;
 
 document.querySelectorAll('.question_s').forEach(el => {

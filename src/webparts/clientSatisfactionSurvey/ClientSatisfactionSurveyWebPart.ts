@@ -25,13 +25,12 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
     this.domElement.innerHTML = `
       <div class='loader'>
         <div class='loader_inner'>
-          <div class='div'>Loading feedback formx...</div>
+          <div class='div'>Loading feedback forms...</div>
         </div>
       </div>
       <div class='tut'>
         <div class='tut_inner'>
-          <h2>Drag the characters mouths to reflect your satisfaction</h2>
-          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/Dec_31,_2015_22:28.gif'>
+          <h2>Drag the characters' mouths to show your satisfaction!</h2>
           <p>Ok</p>
         </div>
       </div>
@@ -44,10 +43,10 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
           <div class='grad monkey'></div>
           <div class='feedbackform_slide__inner'>
             <h1 class='question_s'></h1>
-            <h2>Drag the cheeky monkeys mouth up or down to reflect your satisfaction!</h2>
+            <h2>Drag the doctor's mouth up or down to reflect your satisfaction</h2>
             <div class='character'>
               <div class='character_image'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/monkey.svg'>
+                <img src='https://optumus.com/projects/doctor1.svg'>
               </div>
               <div class='character_smile'>
                 <div class='smiler_input'>
@@ -58,7 +57,7 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
                 </div>
               </div>
             </div>
-            <div class='rating monkey'>
+            <div class='first-rating rating monkey d-none'>
               <span>Average</span>
               <img class='next' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/greenbutton3.png'>
             </div>
@@ -69,10 +68,10 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
           <div class='grad rabbit'></div>
           <div class='feedbackform_slide__inner'>
             <h1 class='question_s'></h1>
-            <h2>Drag the fluffy rabbits mouth up or down to reflect your satisfaction!</h2>
+            <h2>Drag the doctor's mouth up or down to reflect your satisfaction!</h2>
             <div class='character rabbit'>
               <div class='character_image'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rabbit.svg'>
+                <img src='https://optumus.com/projects/doctor2.svg'>
               </div>
               <div class='character_smile'>
                 <div class='smiler_input'>
@@ -98,7 +97,7 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
             <h2>Drag the shy pandas mouth up or down to reflect your satisfaction!</h2>
             <div class='character'>
               <div class='character_image'>
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/panda.svg'>
+                <img src='https://optumus.com/projects/doctor3.svg'>
               </div>
               <div class='character_smile'>
                 <div class='smiler_input'>
@@ -150,9 +149,8 @@ export default class ClientSatisfactionSurveyWebPart extends BaseClientSideWebPa
             </div>
             <div class='col_right'>
               <div class='rating end'>
-                <span>Thankyou!</span>
+                <span>Thank you!</span>
                 <img class='prev' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/greenbutton4.png'>
-                <a href='https://codepen.io/jcoulterdesign/' target='_blank'>Follow me on Codepen for more cool stuff!</a>
               </div>
             </div>
           </div>

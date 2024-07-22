@@ -1,7 +1,8 @@
-/* @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@import url(https://fonts.googleapis.com/css?family=Crete+Round); */
+/* @import url(https://fonts.googleapis.com/css?family=Varela+Round); */
+/* @import url(https://fonts.googleapis.com/css?family=Crete+Round); */
 
 .question {
+  height: 37rem;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -14,11 +15,15 @@
   cursor: pointer;
   margin: 0;
 }
+.d-none {
+  display: none;
+}
 
 .tut {
   background: white;
+  opacity: 75%;
   padding: 0px;
-  width: 760px;
+  width: 75%;
   margin: auto;
   transition: all 0.3s;
   border-radius: 7px;
@@ -28,16 +33,16 @@
   transform: translateY(-50%) scale(0);
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 1000;
 }
 .tut h2 {
   font-size: 20px;
-  color: #C39681;
+  color: #bbc381;
   width: 370px;
   margin: 50px auto 30px auto;
 }
 .tut p {
-  color: #C39681;
+  color: #bbc381;
   border-top: 1px solid #FCF1EC;
   border-bottom-right-radius: 7px;
   padding-top: 30px;
@@ -56,7 +61,8 @@
 .loader {
   z-index: 3;
   height: 37rem;
-  background: #c39681;
+  background: #bbc381;
+  overflow: hidden;
 }
 .loader_inner {
   text-align: center;
@@ -147,9 +153,14 @@ body {
   margin: 0;
   overflow: hidden;
 }
+body .feedbackform {
+  height: 37rem;
+  overflow: hidden;
+}
 body .feedbackform .end {
-  width: 400px !important;
-  height: 75px;
+  height: 37rem;
+  /* width: 400px !important; */
+  /* height: 75px; */
 }
 body .feedbackform .end img {
   top: 42px !important;
@@ -157,10 +168,12 @@ body .feedbackform .end img {
 body .feedbackform_slide {
   overflow: hidden;
   float: left;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 37rem;
+  width: 100%;
   right: 0;
   position: relative;
-  background: #c39681;
+  background: #bbc381;
   transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 body .feedbackform_slide .sb {
@@ -181,8 +194,9 @@ body .feedbackform_slide .sb {
 body .feedbackform_slide .grad.monkey {
   background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #CC970D 100%);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 37rem;
   left: 0;
   opacity: 0.25;
   transition: all 0.3s;
@@ -191,8 +205,9 @@ body .feedbackform_slide .grad.monkey {
 body .feedbackform_slide .grad.rabbit {
   background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #991E64 100%);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 37rem;
   left: 0;
   opacity: 0.25;
   transition: all 0.3s;
@@ -201,8 +216,9 @@ body .feedbackform_slide .grad.rabbit {
 body .feedbackform_slide .grad.panda {
   background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #7414E3 100%);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 37rem;
   left: 0;
   opacity: 0.25;
   transition: all 0.3s;
@@ -211,8 +227,9 @@ body .feedbackform_slide .grad.panda {
 body .feedbackform_slide .grad.lion {
   background: -moz-radial-gradient(center, ellipse cover, rgba(125, 185, 232, 0) 0%, #E41C3B 100%);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 37rem;
   left: 0;
   opacity: 0.25;
   transition: all 0.3s;
@@ -242,8 +259,8 @@ body .feedbackform_slide__inner h2 {
   font-size: 14px;
 }
 body .feedbackform_slide__inner .rating {
-  transform: scale(0);
-  font-family: "Crete Round", serif;
+  /* transform: scale(0); */
+  font-family: "Roboto", serif;
   color: #745226;
   position: relative;
   left: 0px;
@@ -293,7 +310,7 @@ body .feedbackform_slide__inner .character_smile {
 }
 body .feedbackform_slide__inner .character_smile .smile.monkey {
   position: absolute;
-  top: 119px;
+  top: 152px;
   left: 61px;
 }
 body .feedbackform_slide__inner .character_smile .smile.panda {
@@ -308,8 +325,8 @@ body .feedbackform_slide__inner .character_smile .smile.lion {
 }
 body .feedbackform_slide__inner .character_smile .smile.rabbit {
   position: absolute;
-  top: 164px;
-  left: 49px;
+  top: 128px;
+  left: 55px;
 }
 @-moz-document url-prefix() {
   body .feedbackform_slide__inner .character_smile input.monkey {
@@ -534,12 +551,12 @@ a.download:hover, a.follow:hover {
   padding: 9px 0px 0px 0px;
   margin: 0 auto;
   text-align: left;
-  font-family: "Crete Round", serif;
+  font-family: "Roboto", serif;
   color: white;
   font-size: 19px;
   margin: 0 auto;
   text-align: left;
-  font-family: "Crete Round", serif;
+  font-family: "Roboto", serif;
   color: white;
   font-size: 19px;
 }
